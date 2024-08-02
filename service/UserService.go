@@ -45,7 +45,7 @@ func DeleteUser(c *gin.Context) {
 	// c.JSON(http.StatusNotFound, "Error")
 
 	user := pojo.DeleteUser(c.Param("id"))
-	if user.Id == 0 {
+	if !user {
 		c.JSON(http.StatusNotFound, "Error")
 		return
 	}

@@ -2,20 +2,21 @@ package pojo
 
 import (
 	"golangApi/database"
+	"log"
 )
 
 // type User struct {
-// 	Id       int    `json:"UserId"`
-// 	Name     string `json:"UserName"`
-// 	Password string `json:"UserPassword"`
-// 	Email    string `json:"UserEmail"`
+// 	Id       int    `json:"UserId" binding:"required"`
+// 	Name     string `json:"UserName" binding:"required,gt=5"`
+// 	Password string `json:"UserPassword" binding:"min=4,max=20,userpasd"`
+// 	Email    string `json:"UserEmail" binding:"email"`
 // }
 
 type User struct {
-	Id       int
-	Name     string
-	Password string
-	Email    string
+	Id       int    `json:"UserId" binding:"required"`
+	Name     string `json:"UserName" binding:"required,gt=5"`
+	Password string `json:"UserPassword" binding:"min=4,max=20,userpasd"`
+	Email    string `json:"UserEmail" binding:"email`
 }
 
 func FindAllUsers() []User {
@@ -37,10 +38,14 @@ func CreateUser(user User) User {
 }
 
 // DeleteUser
-func DeleteUser(userId string) User {
+func DeleteUser(userId string) bool {
 	user := User{}
-	database.DBConnect.Where("id=?", userId).Delete(&user)
-	return user
+	result := database.DBConnect.Where("id=?", userId).Delete(&user)
+	log.Println(result)
+	if result.RowsAffected == 0 {
+		return false
+	}
+	return true
 }
 
 // UpdataUser
