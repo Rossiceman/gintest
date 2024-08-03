@@ -13,10 +13,10 @@ import (
 // }
 
 type User struct {
-	Id       int    `json:"UserId" binding:"required"`
-	Name     string `json:"UserName" binding:"required,gt=5"`
-	Password string `json:"UserPassword" binding:"min=4,max=20,userpasd"`
-	Email    string `json:"UserEmail" binding:"email`
+	Id       int
+	Name     string
+	Password string
+	Email    string
 }
 
 func FindAllUsers() []User {
