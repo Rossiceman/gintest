@@ -12,56 +12,44 @@
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :80
+::1 - [2024-08-03 15:15:49.435408 +0800 CST m=+12.157908292] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:15:49 | 200 |   17.792084ms |             ::1 | GET      "/v1/users/"
+127.0.0.1 - [2024-08-03 15:15:58.940609 +0800 CST m=+21.663020501] GET / 404 
+[GIN] 2024/08/03 - 15:15:58 | 404 |     644.292µs |       127.0.0.1 | GET      "/"
+::1 - [2024-08-03 15:16:24.241038 +0800 CST m=+46.963214167] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:16:24 | 200 |    9.154292ms |             ::1 | GET      "/v1/users/"
+::1 - [2024-08-03 15:16:24.349753 +0800 CST m=+47.071927459] GET /favicon.ico 404 
+[GIN] 2024/08/03 - 15:16:24 | 404 |      95.834µs |             ::1 | GET      "/favicon.ico"
+::1 - [2024-08-03 15:17:05.029626 +0800 CST m=+87.751421042] POST /v1/users/ 200 
+[GIN] 2024/08/03 - 15:17:05 | 200 |   23.490208ms |             ::1 | POST     "/v1/users/"
+::1 - [2024-08-03 15:17:09.349992 +0800 CST m=+92.071747667] POST /v1/users/ 200 
+[GIN] 2024/08/03 - 15:17:09 | 200 |    8.028083ms |             ::1 | POST     "/v1/users/"
+::1 - [2024-08-03 15:17:12.945183 +0800 CST m=+95.666904084] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:17:12 | 200 |    2.561584ms |             ::1 | GET      "/v1/users/"
+::1 - [2024-08-03 15:17:43.091166 +0800 CST m=+125.812606751] POST /v1/users/ 200 
+[GIN] 2024/08/03 - 15:17:43 | 200 |    8.500834ms |             ::1 | POST     "/v1/users/"
+::1 - [2024-08-03 15:17:46.626706 +0800 CST m=+129.348113459] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:17:46 | 200 |    2.085875ms |             ::1 | GET      "/v1/users/"
+::1 - [2024-08-03 15:17:47.081864 +0800 CST m=+129.803266792] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:17:47 | 200 |    2.872958ms |             ::1 | GET      "/v1/users/"
+::1 - [2024-08-03 15:17:48.456171 +0800 CST m=+131.177561417] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:17:48 | 200 |    1.335125ms |             ::1 | GET      "/v1/users/"
+::1 - [2024-08-03 15:17:49.152538 +0800 CST m=+131.873921459] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:17:49 | 200 |    1.067125ms |             ::1 | GET      "/v1/users/"
+::1 - [2024-08-03 15:17:49.589979 +0800 CST m=+132.311358292] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:17:49 | 200 |    1.674875ms |             ::1 | GET      "/v1/users/"
+::1 - [2024-08-03 15:17:49.804402 +0800 CST m=+132.525779834] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:17:49 | 200 |    1.760833ms |             ::1 | GET      "/v1/users/"
 [GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:11:12.379253 +0800 CST m=+9.940391709] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:11:12 | 400 |    6.243416ms |             ::1 | POST     "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:11:18.802489 +0800 CST m=+16.363628917] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:11:18 | 400 |    3.318875ms |             ::1 | POST     "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:11:24.25477 +0800 CST m=+21.815910334] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:11:24 | 400 |     228.708µs |             ::1 | POST     "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:12:18.446787 +0800 CST m=+76.007934251] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:12:18 | 400 |     998.833µs |             ::1 | POST     "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:12:28.002975 +0800 CST m=+85.564123709] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:12:28 | 400 |     301.541µs |             ::1 | POST     "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:12:35.898603 +0800 CST m=+93.459753084] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:12:35 | 400 |     304.375µs |             ::1 | POST     "/v1/users/"
-127.0.0.1 - [2024-08-02 16:12:43.264585 +0800 CST m=+100.825735292] GET /v1/users/ 200 
-[GIN] 2024/08/02 - 16:12:43 | 200 |   19.453667ms |       127.0.0.1 | GET      "/v1/users/"
-127.0.0.1 - [2024-08-02 16:12:46.219263 +0800 CST m=+103.780414001] GET /v1/users/ 200 
-[GIN] 2024/08/02 - 16:12:46 | 200 |    1.861083ms |       127.0.0.1 | GET      "/v1/users/"
-127.0.0.1 - [2024-08-02 16:12:47.078974 +0800 CST m=+104.640124626] GET /v1/users/ 200 
-[GIN] 2024/08/02 - 16:12:47 | 200 |     1.28625ms |       127.0.0.1 | GET      "/v1/users/"
-127.0.0.1 - [2024-08-02 16:12:48.627572 +0800 CST m=+106.188722876] GET /v1/users/ 200 
-[GIN] 2024/08/02 - 16:12:48 | 200 |    1.648875ms |       127.0.0.1 | GET      "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:13:08.602413 +0800 CST m=+126.163567501] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:13:08 | 400 |    4.951416ms |             ::1 | POST     "/v1/users/"
-::1 - [2024-08-02 16:13:14.18714 +0800 CST m=+131.748294459] GET /v1/users/ 200 
-[GIN] 2024/08/02 - 16:13:14 | 200 |    1.325584ms |             ::1 | GET      "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:14:00.8824 +0800 CST m=+178.443560876] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:14:00 | 400 |     954.166µs |             ::1 | POST     "/v1/users/"
-::1 - [2024-08-02 16:14:06.185338 +0800 CST m=+183.746499209] GET /v1/users/ 200 
-[GIN] 2024/08/02 - 16:14:06 | 200 |     1.79375ms |             ::1 | GET      "/v1/users/"
-::1 - [2024-08-02 16:14:26.560726 +0800 CST m=+204.121890334] GET /v1/users/ 200 
-[GIN] 2024/08/02 - 16:14:26 | 200 |     993.125µs |             ::1 | GET      "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:14:29.616343 +0800 CST m=+207.177507917] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:14:29 | 400 |      1.0835ms |             ::1 | POST     "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:17:08.827873 +0800 CST m=+366.389059542] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:17:08 | 400 |    1.549541ms |             ::1 | POST     "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:17:15.03732 +0800 CST m=+372.598506542] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:17:15 | 400 |     309.667µs |             ::1 | POST     "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:17:21.557796 +0800 CST m=+379.118984042] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:17:21 | 400 |     368.542µs |             ::1 | POST     "/v1/users/"
-[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 400 with 406
-::1 - [2024-08-02 16:17:28.506261 +0800 CST m=+386.067449876] POST /v1/users/ 400 
-[GIN] 2024/08/02 - 16:17:28 | 400 |     924.833µs |             ::1 | POST     "/v1/users/"
+::1 - [2024-08-03 15:18:01.882398 +0800 CST m=+144.603662917] POST /v1/users/ 400 
+[GIN] 2024/08/03 - 15:18:01 | 400 |    1.423041ms |             ::1 | POST     "/v1/users/"
+::1 - [2024-08-03 15:18:10.671357 +0800 CST m=+153.392540084] POST /v1/users/ 200 
+[GIN] 2024/08/03 - 15:18:10 | 200 |    3.567125ms |             ::1 | POST     "/v1/users/"
+::1 - [2024-08-03 15:18:14.08861 +0800 CST m=+156.809761001] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:18:14 | 200 |    2.029292ms |             ::1 | GET      "/v1/users/"
+::1 - [2024-08-03 15:18:15.256692 +0800 CST m=+157.977832501] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:18:15 | 200 |    1.527792ms |             ::1 | GET      "/v1/users/"
+::1 - [2024-08-03 15:18:15.755451 +0800 CST m=+158.476586667] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:18:15 | 200 |    1.338792ms |             ::1 | GET      "/v1/users/"
+::1 - [2024-08-03 15:18:19.909751 +0800 CST m=+162.630847626] GET /v1/users/ 200 
+[GIN] 2024/08/03 - 15:18:19 | 200 |       1.975ms |             ::1 | GET      "/v1/users/"
