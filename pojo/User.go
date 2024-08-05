@@ -5,19 +5,24 @@ import (
 	"log"
 )
 
-// type User struct {
-// 	Id       int    `json:"UserId" binding:"required"`
-// 	Name     string `json:"UserName" binding:"required,gt=5"`
-// 	Password string `json:"UserPassword" binding:"min=4,max=20,userpasd"`
-// 	Email    string `json:"UserEmail" binding:"email"`
-// }
-
 type User struct {
-	Id       int
-	Name     string
-	Password string
-	Email    string
+	Id       int    `json:"UserId" binding:"required"`
+	Name     string `json:"UserName" binding:"required,gt=5"`
+	Password string `json:"UserPassword" binding:"min=4,max=20,userpasd"`
+	Email    string `json:"UserEmail" binding:"email"`
 }
+
+type Users struct {
+	UserList     []User `json:"UserList" binding:"required,gt=0,lt=3"`
+	UserListSize int    `json:"UserListSize"`
+}
+
+// type User struct {
+// 	Id       int
+// 	Name     string
+// 	Password string
+// 	Email    string
+// }
 
 func FindAllUsers() []User {
 	var user []User

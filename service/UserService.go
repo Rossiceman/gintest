@@ -84,3 +84,14 @@ func PutUser(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, user)
 }
+
+// CreateUserList
+func CreateUserList(c *gin.Context) {
+	users := pojo.Users{}
+	err := c.BindJSON(&users)
+	if err != nil {
+		c.String(400, "Error:%s", err.Error())
+		return
+	}
+	c.JSON(http.StatusOK, users)
+}

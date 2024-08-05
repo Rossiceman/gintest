@@ -3,6 +3,7 @@ package main
 import (
 	"golangApi/database"
 	"golangApi/middlewares"
+	"golangApi/pojo"
 	"golangApi/src"
 	"io"
 	"os"
@@ -24,6 +25,7 @@ func main() {
 	// 註冊 Validator func
 	if v, ok := binding.Validator.Engine().(*validator.Validate); ok {
 		v.RegisterValidation("userpasd", middlewares.UserPasd)
+		v.RegisterStructValidation(middlewares.UserList, pojo.Users{})
 	}
 
 	router.Use(gin.Recovery(), middlewares.Logger())
